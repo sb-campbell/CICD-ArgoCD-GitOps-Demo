@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/sb-campbell/cicd-argocd-gitops-demo.git
     targetRevision: HEAD
-    path: example2-argocd-app-of-apps/environments/stage/my-app-one
+    path: example2-argocd-app-of-apps/my-app-one
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:

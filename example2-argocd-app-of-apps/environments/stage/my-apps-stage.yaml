@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-two
+  name: my-apps-stage
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/sb-campbell/cicd-argocd-gitops-demo.git
     targetRevision: HEAD
-    path: example2-argocd-app-of-apps/environments/stage/my-app-two
+    path: example2-argocd-app-of-apps/argocd-app
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
